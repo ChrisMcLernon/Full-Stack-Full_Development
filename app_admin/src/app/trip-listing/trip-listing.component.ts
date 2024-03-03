@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { TripDataService } from 'services/trip-data.service';
-import { Trip } from 'models/Trip';
+import { TripDataService } from 'src/app/services/trip-data.service';
+import { Trip } from 'src/app/models/Trip';
 
 @Component({
   selector: 'app-trip-listing',
@@ -20,7 +20,7 @@ export class TripListingComponent implements OnInit {
     private router: Router  
   ) { }
 
-  private addTrip(): void {
+  public addTrip(): void {
     this.router.navigate(['add-trip']);
   }
 
